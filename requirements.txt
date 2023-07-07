@@ -1,0 +1,9 @@
+azure-core==1.27.1
+azure-storage-blob==12.16.0
+openpyxl==3.0.10
+rapidfuzz==3.1.1
+scipy==1.9.1
+statsmodels==0.13.2
+streamlit==1.23.1
+
+

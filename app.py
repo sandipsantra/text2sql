@@ -31,6 +31,7 @@ class text2sql:
         data={"inputdata":{"question":str(question),"path":self.container_path+str(filename)+self.token}}
         r=requests.post(self.rest_api,json.dumps(data),headers=self.headers)
         st.markdown('''<style>[data-testid="stMarkdownContainer"] ul{text-align:left;color:Blue;font-size:20px;}</style>''',unsafe_allow_html=True)
+        st.markdown("SQL: "+str(r.json()["inputdata"]["sql"]))
         st.markdown("Result: "+str(r.json()["inputdata"]["result"]))
         st.markdown("Summary: "+r.json()["inputdata"]["summary"])
         return        

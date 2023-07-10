@@ -8,7 +8,7 @@ class text2sql:
     
     def __init__(self):     
         self.rest_api='https://unum-mlprdpmcv-text2sqlschema.eastus.inference.ml.azure.com/score'
-        self.api_key='yCt9Zovh5zYSbCvl8uDJah6yMwNhzuo1'
+        self.api_key='3PDsJ53cxuM4Ed4uMb57fefFVXSsVTYU'
         self.headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ self.api_key), 'azureml-model-deployment': 'text2sql-1' }
         self.conn_string="DefaultEndpointsProtocol=https;AccountName=mlstorageprdajsa;AccountKey=JmQcHKIwuWyr5m6YDDOeInfe3r88AHPTXd73iJ+8aetUDpNcOoPaW0mQT6SK/vs3pnycnfOVQhD2F5DJWFc7xA==;EndpointSuffix=core.windows.net"
         self.container_name = 'unumdata'
